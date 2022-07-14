@@ -114,8 +114,21 @@ class Contact{
 }
 
 try{
-    let contact1 = new Contact("Ash","Shirsath","ashu","kjlml","klkj","121212","12","ash@gmail.com");
+    let contact1 = new Contact("Ashwini","Shirsath","TulsiNagar","Shahada","Maharashtra","121212","91 7766554433","ashwini@gmail.com");
     console.log(contact1.toString());
+
+    let contact2 = new Contact("Sadanand","Pandey","PatelNagar","NewDelhi","Delhi","121212","91 1122112211","pandey@gmail.com");
+    console.log(contact2.toString());
+
+    let contact3 = new Contact("Harshada","Lohar","KashimaNagar","Prakasha","Maharashtra","121212","91 1234562211","lohar@gmail.com");
+    console.log(contact3.toString());
+    
+    var addressBookArr = new Array();
+    addressBookArr.push(contact1);
+    addressBookArr.push(contact2);
+    addressBookArr.push(contact3);
 } catch(e) {
     console.log(e);
 }
+
+console.log(addressBookArr);
